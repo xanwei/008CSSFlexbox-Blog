@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+    <main>
+        <form name="contact" method="POST" data-netlify="true"><h4>
+            <div><label for="fname">Voornaam:</label><br>
+                <input type="text" id="fname" name="fname" required /><br></div>
+            <div><label for="lname">Achternaam:</label><br>
+                <input type="text" id="lname" name="lname" required /><br></div>
+            <div><label for="email">E-mailadres:</label><br>
+                <input type="text" id="email" required /><br></div>
+            <div><label for="phone">Telefoonnummer:</label><br>
+                <input type="tel" id="phone" name="phone" /><br></div>
+            <div><label for="quantity">Leeftijd:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="120" step="1"><br></div>
+            <div><label for="birthdate">Geboortedatum</label><br>
+                <input type="date" name="date" id="date" max="2021-02-28" min="01-01-1900" /><br></div></h4>
+            <div>
+                <h3>Je gender</h3>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Mannelijk</label><br>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Vrouwelijk</label><br>
+                <input type="radio" id="other" name="gender" value="other" />
+                <label for="other">Anders</label></div>
+            <div>
+                <h3>Je favoriete keuken</h3>
+                <input type="checkbox" id="cuisine1" name="cuisine1" value="Frans" />
+                <label for="cuisine1"> Mijn favoriete cuisine is Frans.</label><br>
+                <input type="checkbox" id="cuisine2" name="cuisine2" value="Spaans" />
+                <label for="cuisine2"> Mijn favoriete cuisine is Spaans.</label><br>
+                <input type="checkbox" id="cuisine3" name="cuisine3" value="Arabisch" />
+                <label for="cuisine3"> Mijn favoriete cuisine is Arabisch.</label><br>
+                <input type="checkbox" id="cuisine4" name="cuisine4" value="Italiaans" />
+                <label for="cuisine4"> Mijn favoriete cuisine is Italiaans.</label><br></div>
+            <div>
+                <h3>Je favoriete kleur van jouw schort</h3>
+                <h4>Klik op het vak en maak je keuze.</h4>
+                <input type="color" id="colorpicker" value="white"></div>
+            <div>
+                <h3>Over je leven</h3>
+                <h4>Schrijf hier op:</h4>
+                <label>
+                <type><textarea name="bio" id="bio" cols="30" rows="10"></textarea></type>
+                </label>
+                <h3>Wat is jouw favoriet recept? Upload het!</h3>
+                <input type="file" id="file" name="file"></div>
+            <div>
+                <h3>Wat is jouw favoriete receptensite? Laat de url achter</h3>
+                <label for="url">URL</label>
+                <input type="url" id="url"></div>
+            <div>
+
+                <h4>Ingevuld, doorgelezen en foutje ontdekt?</h4>
+
+                <button type="reset">Doe dan deze stap nogmaals</button>
+                <button type="submit">Verzenden!</button>
+            </div>
+        </form>
+        <p>Zo kom je weer op de <a href="index.html">homepage</a> van mij. </p>
+    </main>
+
+</body>
+
+</html>
